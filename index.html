@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>ALL.TIME.HIGH</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+
+background:#f5ead8;
+font-family:Inter,sans-serif;
+color:#111;
+}
+
+nav{
+
+position:fixed;
+width:100%;
+display:flex;
+justify-content:center;
+gap:40px;
+padding:20px;
+background:rgba(245,234,216,.9);
+backdrop-filter:blur(8px);
+z-index:100;
+
+}
+
+nav a{
+
+text-decoration:none;
+color:#111;
+font-weight:700;
+letter-spacing:2px;
+}
+
+.hero{
+
+height:100vh;
+background-image:url("poster.jpg");
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+justify-content:center;
+position:relative;
+
+}
+
+.hero::after{
+
+content:"";
+position:absolute;
+inset:0;
+background:rgba(0,0,0,.45);
+
+}
+
+.hero-content{
+
+position:relative;
+z-index:2;
+text-align:center;
+color:white;
+
+}
+
+.hero h1{
+
+font-family:Oswald;
+font-size:6rem;
+letter-spacing:4px;
+
+}
+
+.hero p{
+
+font-size:1.3rem;
+margin-top:15px;
+
+}
+
+.button{
+
+display:inline-block;
+margin-top:35px;
+padding:18px 40px;
+background:#ef4d87;
+color:white;
+text-decoration:none;
+font-weight:bold;
+letter-spacing:2px;
+transition:.3s;
+
+}
+
+.button:hover{
+
+background:#111;
+
+}
+
+section{
+
+padding:90px 12%;
+}
+
+h2{
+
+font-family:Oswald;
+font-size:3rem;
+margin-bottom:30px;
+}
+
+.about{
+
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:60px;
+align-items:center;
+
+}
+
+.about img{
+
+width:100%;
+border:8px solid white;
+box-shadow:0 15px 35px rgba(0,0,0,.2);
+
+}
+
+.members{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:30px;
+margin-top:30px;
+
+}
+
+.member{
+
+background:white;
+padding:30px;
+border-left:8px solid #ef4d87;
+
+}
+
+.member h3{
+
+font-family:Oswald;
+
+}
+
+.music{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+
+}
+
+.card{
+
+background:white;
+padding:30px;
+}
+
+.card h3{
+
+font-family:Oswald;
+margin-bottom:15px;
+
+}
+
+.contact{
+
+text-align:center;
+
+}
+
+footer{
+
+padding:40px;
+text-align:center;
+background:#111;
+color:white;
+
+}
+
+@media(max-width:900px){
+
+.hero h1{
+
+font-size:3.5rem;
+
+}
+
+.about{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+
+<a href="#about">ABOUT</a>
+<a href="#music">SONGS</a>
+<a href="#contact">CONTACT</a>
+
+</nav>
+
+<header class="hero">
+
+<div class="hero-content">
+
+<h1>ALL.TIME.HIGH</h1>
+
+<p>Pop-Punk • Alt-Rock • Pop</p>
+
+<a class="button" href="https://instagram.com/alltimehighdc">
+FOLLOW US
+</a>
+
+</div>
+
+</header>
+
+<section id="about">
+
+<h2>DMV COVER BAND</h2>
+
+<div class="about">
+
+<div>
+
+<p>
+
+High-energy party band covering your favorite hits with booming drums, soaring vocals, huge guitar riffs, and nonstop energy.
+
+Whether you're looking for 2000s pop-punk, 90s alternative rock, or 80s power ballads, ALL.TIME.HIGH delivers an unforgettable live show.
+
+</p>
+
+<br><br>
+
+<div class="members">
+
+<div class="member">
+
+<h3>Rogelio Plasencia</h3>
+
+<p>Vocals</p>
+
+</div>
+
+<div class="member">
+
+<h3>Doug McEnerney</h3>
+
+<p>Guitar</p>
+
+</div>
+
+<div class="member">
+
+<h3>Albert Lee</h3>
+
+<p>Bass</p>
+
+</div>
+
+<div class="member">
+
+<h3>Brennan Divett</h3>
+
+<p>Drums</p>
+
+</div>
+
+</div>
+
+</div>
+
+<img src="poster.jpg">
+
+</div>
+
+</section>
+
+<section id="music">
+
+<h2>WHAT WE PLAY</h2>
+
+<div class="music">
+
+<div class="card">
+
+<h3>2000s</h3>
+
+<p>
+
+The Killers<br>
+Fall Out Boy<br>
+Paramore<br>
+Blink-182<br>
+Jimmy Eat World<br>
+Foo Fighters<br>
+Bruno Mars<br>
+Adele<br>
+Yellowcard<br>
+Rihanna<br>
+Maroon 5<br>
+Oasis
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>90s</h3>
+
+<p>
+
+Green Day<br>
+Third Eye Blind<br>
+Radiohead<br>
+The Cranberries<br>
+Goo Goo Dolls<br>
+Jennifer Lopez<br>
+Bon Jovi<br>
+Incubus<br>
+Santana<br>
+Britney Spears
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>80s</h3>
+
+<p>
+
+The Cure<br>
+The Police<br>
+Journey<br>
+Fleetwood Mac<br>
+Tina Turner<br>
+Cyndi Lauper<br>
+Aerosmith
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2>BOOK THE BAND</h2>
+
+<div class="contact">
+
+<p>
+
+Instagram
+
+<br><br>
+
+<strong>@AllTimeHighDC</strong>
+
+<br><br>
+
+Email
+
+<br><br>
+
+<strong>all.time.high.dc@gmail.com</strong>
+
+<br><br>
+
+<a class="button" href="mailto:all.time.high.dc@gmail.com">
+
+BOOK NOW
+
+</a>
+
+</div>
+
+</section>
+
+<footer>
+
+© ALL.TIME.HIGH • DMV Cover Band
+
+</footer>
+
+</body>
+
+</html>
