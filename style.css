@@ -1,0 +1,442 @@
+/* =====================================
+   ALL.TIME.HIGH
+   style.css
+====================================== */
+
+:root{
+
+    --cream:#F4E8D7;
+    --pink:#E94E87;
+    --blue:#6E8DB8;
+    --black:#111111;
+    --white:#FFFFFF;
+
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    background:var(--cream);
+    color:var(--black);
+
+    font-family:'Inter',sans-serif;
+    line-height:1.7;
+
+}
+
+/* ---------------- Navigation ---------------- */
+
+nav{
+
+    position:fixed;
+    top:0;
+    width:100%;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:50px;
+
+    padding:22px;
+
+    background:rgba(244,232,215,.90);
+    backdrop-filter:blur(12px);
+
+    border-bottom:1px solid rgba(0,0,0,.08);
+
+    z-index:999;
+
+}
+
+nav a{
+
+    text-decoration:none;
+    color:var(--black);
+
+    font-family:'Oswald',sans-serif;
+    font-size:1rem;
+
+    letter-spacing:2px;
+
+    transition:.3s;
+
+}
+
+nav a:hover{
+
+    color:var(--pink);
+
+}
+
+/* ---------------- Hero ---------------- */
+
+.hero{
+
+    position:relative;
+
+    height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:url("poster.jpg") center center;
+    background-size:cover;
+
+}
+
+.hero::before{
+
+    content:"";
+
+    position:absolute;
+    inset:0;
+
+    background:rgba(0,0,0,.55);
+
+}
+
+.hero-content{
+
+    position:relative;
+
+    z-index:5;
+
+    text-align:center;
+
+    color:white;
+
+    max-width:900px;
+
+    padding:30px;
+
+}
+
+.hero h1{
+
+    font-family:'Oswald',sans-serif;
+
+    font-size:7rem;
+
+    letter-spacing:5px;
+
+    line-height:.9;
+
+    text-transform:uppercase;
+
+}
+
+.hero p{
+
+    margin-top:25px;
+
+    font-size:1.4rem;
+
+    letter-spacing:3px;
+
+}
+
+.button{
+
+    display:inline-block;
+
+    margin-top:45px;
+
+    padding:18px 44px;
+
+    text-decoration:none;
+
+    background:var(--pink);
+
+    color:white;
+
+    font-weight:700;
+
+    letter-spacing:2px;
+
+    transition:.3s;
+
+}
+
+.button:hover{
+
+    background:var(--blue);
+
+    transform:translateY(-3px);
+
+}
+
+/* ---------------- General Sections ---------------- */
+
+section{
+
+    padding:100px 10%;
+
+}
+
+h2{
+
+    font-family:'Oswald',sans-serif;
+
+    font-size:3.5rem;
+
+    letter-spacing:2px;
+
+    margin-bottom:40px;
+
+    text-transform:uppercase;
+
+}
+
+/* ---------------- About ---------------- */
+
+.about{
+
+    display:grid;
+
+    grid-template-columns:1.2fr 1fr;
+
+    gap:70px;
+
+    align-items:center;
+
+}
+
+.about img{
+
+    width:100%;
+
+    border:8px solid white;
+
+    transform:rotate(-2deg);
+
+    box-shadow:0 18px 40px rgba(0,0,0,.2);
+
+}
+
+.about p{
+
+    font-size:1.1rem;
+
+}
+
+/* ---------------- Members ---------------- */
+
+.members{
+
+    margin-top:45px;
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+    gap:25px;
+
+}
+
+.member{
+
+    background:white;
+
+    border-left:8px solid var(--pink);
+
+    padding:30px;
+
+    transition:.3s;
+
+}
+
+.member:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:0 14px 30px rgba(0,0,0,.15);
+
+}
+
+.member h3{
+
+    font-family:'Oswald',sans-serif;
+
+    font-size:1.4rem;
+
+    margin-bottom:8px;
+
+}
+
+/* ---------------- Music ---------------- */
+
+.music{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:35px;
+
+}
+
+.card{
+
+    background:white;
+
+    padding:35px;
+
+    border-top:8px solid var(--blue);
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.card h3{
+
+    font-family:'Oswald',sans-serif;
+
+    margin-bottom:20px;
+
+    color:var(--pink);
+
+}
+
+.card p{
+
+    line-height:2;
+
+}
+
+/* ---------------- Contact ---------------- */
+
+.contact{
+
+    text-align:center;
+
+}
+
+.contact p{
+
+    font-size:1.2rem;
+
+}
+
+.contact strong{
+
+    color:var(--pink);
+
+}
+
+/* ---------------- Footer ---------------- */
+
+footer{
+
+    background:#111;
+
+    color:white;
+
+    text-align:center;
+
+    padding:45px;
+
+    letter-spacing:2px;
+
+    font-size:.95rem;
+
+}
+
+/* ---------------- Scrollbar ---------------- */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:var(--cream);
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:var(--pink);
+
+}
+
+/* ---------------- Responsive ---------------- */
+
+@media (max-width:1000px){
+
+    .hero h1{
+
+        font-size:5rem;
+
+    }
+
+    .about{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+@media (max-width:768px){
+
+    nav{
+
+        gap:18px;
+
+        padding:18px;
+
+        flex-wrap:wrap;
+
+    }
+
+    nav a{
+
+        font-size:.9rem;
+
+    }
+
+    .hero h1{
+
+        font-size:3.2rem;
+
+    }
+
+    .hero p{
+
+        font-size:1rem;
+
+    }
+
+    h2{
+
+        font-size:2.5rem;
+
+    }
+
+    section{
+
+        padding:70px 8%;
+
+    }
+
+    .button{
+
+        width:100%;
+
+        text-align:center;
+
+    }
+
+}
